@@ -24,16 +24,17 @@
     {
       "src": "screenshots/desktop.webp",
       "sizes": "2304x1536",
-      "type": "image/webp",
-      "form_factor": "wide",
-      "label": "desktop"
+      "type": "image/webp"
+    },
+    {
+      "src": "screenshots/mobile-launchscreen.webp",
+      "sizes": "1080x2424",
+      "type": "image/webp"
     },
     {
       "src": "screenshots/mobile.webp",
       "sizes": "1080x2424",
-      "type": "image/webp",
-      "form_factor": "narrow",
-      "label": "mobile"
+      "type": "image/webp"
     }
   ]
 }
