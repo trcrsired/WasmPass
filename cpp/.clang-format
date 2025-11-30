@@ -1,0 +1,13 @@
+# Always use tabs for indentation
+UseTab: Always
+IndentWidth: 8
+TabWidth: 8
+
+# Place opening braces on a new line (Allman style)
+BreakBeforeBraces: Allman
+
+# Control spacing around parentheses and statements
+SpaceBeforeParens: ControlStatements
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false

@@ -39,3 +39,7 @@
 
 # debug information files
 *.dwo
+
+# Ignore build artifacts
+/.build/
+/.DS_Store/

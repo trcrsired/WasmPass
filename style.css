@@ -1,0 +1,103 @@
+/* style.css */
+/* Source: https://github.com/trcrsired/pwa-wasm-example
+   License: GNU GPL v3.0 */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Ensure proper scaling on mobile */
+body {
+  font-size: 18px;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  body {
+    font-size: 20px; /* bump font size on small screens */
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Auto dark mode based on OS preference */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  h1 {
+    color: #ffffff;
+  }
+
+  a {
+    color: #90caf9;
+  }
+
+  ul, li {
+    color: #cccccc;
+  }
+}
+
+/* 🔧 Back to Top button styling — circular and safe */
+#backToTop {
+  position: fixed;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  right: calc(20px + env(safe-area-inset-right));
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  line-height: 48px; /* vertically center the ↑ */
+}
+
+#backToTop:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.title-link {
+  color: inherit;        /* use the same color as the h1 */
+  text-decoration: none; /* remove underline */
+  cursor: pointer;       /* show pointer on hover */
+}
+
+.title-link:hover {
+  text-decoration: none; /* keep underline off on hover */
+  color: inherit;        /* prevent color change */
+}

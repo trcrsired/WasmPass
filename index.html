@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GenPass</title>
+
+  <!-- PWA manifest and theme -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#317EFB">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/webp" href="icon.webp">
+
+  <!-- Mobile scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Page title -->
+  <h1>
+    <a href="/" class="title-link">GenPass</a>
+  </h1>
+
+  <!-- Count input with Generate button -->
+  <label for="count">Count:</label>
+  <input type="number" id="count" min="1" max="10000000" value="1000">
+  <button id="generateBtn">Generate</button>
+
+  <!-- Category radio buttons -->
+  <fieldset>
+    <legend>Category:</legend>
+    <label><input type="radio" name="category" value="password" checked> Password</label>
+    <label><input type="radio" name="category" value="passwordspecial"> Password + Special</label>
+    <label><input type="radio" name="category" value="username"> Username</label>
+    <label><input type="radio" name="category" value="pin4"> PIN (4)</label>
+    <label><input type="radio" name="category" value="pin6"> PIN (6)</label>
+    <label><input type="radio" name="category" value="pin12"> PIN (12)</label>
+  </fieldset>
+
+  <!-- Save button -->
+  <button id="saveBtn">Save Data</button>
+
+  <!-- License and repo info -->
+  <p>This project is licensed under GPLv3. Source code: 
+    <a href="https://github.com/trcrsired/GenPass" target="_blank">
+      https://github.com/trcrsired/GenPass
+    </a>
+  </p>
+
+  <!-- Duration placeholder (hidden by default) -->
+  <p id="durationInfo" style="display:none;"></p>
+
+  <!-- Output area -->
+  <div id="output"></div>
+
+  <!-- WASM loader -->
+  <script src="app.js"></script>
+
+  <!-- Service worker register -->
+  <script src="sw-register.js"></script>
+
+  <!-- Back to top button -->
+  <button id="backToTop">↑</button>
+</body>
+
+</html>

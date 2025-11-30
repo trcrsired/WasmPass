@@ -1,0 +1,17 @@
+{
+  "name": "GenPass",
+  "short_name": "GenPass",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#317EFB",
+  "description": "A standalone Progressive Web App that leverages WebAssembly and the fast_io C++ library to efficiently generate secure passwords, usernames, and PINs.",
+  "icons": [
+    {
+      "src": "icon.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
